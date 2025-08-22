@@ -1,4 +1,4 @@
-import { loginUser } from "@/app/lib/loginUser";
+import { loginUser } from "../../../lib/loginUser";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
