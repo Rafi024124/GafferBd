@@ -43,7 +43,7 @@ npm run dev
 The app will be available at http://localhost:3000
 .
 
-# 5. Run the development server
+# 5. Routes Summary
 1. Landing Page (/)
 
 Contains 4 sections:
