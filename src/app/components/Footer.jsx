@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`w-full py-10 transition-colors ${
+      className={`mt-4 w-full py-10 transition-colors ${
         theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-100 text-gray-700"
       }`}
     >
