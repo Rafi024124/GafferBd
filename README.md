@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🏆 GafferBD – Demo Jersey E-Commerce Store
 
-## Getting Started
+GafferBD is a simple demo e-commerce application built for football fans to explore and showcase jerseys of different countries and clubs.
+This project focuses on browsing, viewing details, and adding jerseys through a basic authentication flow.
 
-First, run the development server:
+🚀 Features
+🏠 Home Page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A Highlights Section displaying top football jerseys.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clean layout to showcase trending or featured jerseys.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+📦 Products Page (/products)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Displays a list of all available jerseys (countries & clubs).
 
-## Learn More
+Clicking on any jersey opens a Details Page with:
 
-To learn more about Next.js, take a look at the following resources:
+Jersey image
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Price (if included)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Description
 
-## Deploy on Vercel
+Club / Country info
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👕 Jersey Details
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Each product has a dedicated page with detailed information.
+
+Option to explore jersey design and metadata.
+
+🔐 Authentication
+
+Social Login support (Google / GitHub).
+
+Only authenticated users can add a new product.
+
+➕ Add Product (after login)
+
+Authenticated users can add a jersey using a form.
+
+Fields include:
+
+Jersey Name
+
+Club / Country
+
+Image URL
+
+Description
+
+Price (optional)
+
+🛠️ Tech Stack
+
+Frontend: Next.js / React
+
+Styling: TailwindCSS
+
+Auth: Firebase Authentication (Social login)
+
+Backend (optional): Node.js + Express + MongoDB (if data is stored)
+
+📸 Demo Flow
+
+Visit Home Page → See highlighted jerseys.
+
+Navigate to Products Page → Browse all jerseys.
+
+Click a Jersey Card → See detailed information.
+
+Login with Social Auth → Unlock Add Product feature.
+
+Add a new Jersey through the form.
+
+⚽ About the Project
+
+This is a demo project for learning purposes.
+The goal is to simulate an e-commerce flow without complex cart/checkout systems.
+Perfect for football enthusiasts who want a simple platform to explore jersey collections.
