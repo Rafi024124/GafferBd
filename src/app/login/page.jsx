@@ -12,16 +12,19 @@ export default function LoginPage() {
   const { theme } = useContext(ThemeContext);
 
   const [loading, setLoading] = useState(false);
-  const callbackUrl = searchParams.get("callbackUrl") || "/products";
+  
 
-  const handleGoogleSignIn = async () => {
-    setLoading(true);
-    try {
-      await signIn("google", { callbackUrl });
-    } finally {
-      setLoading(false);
-    }
-  };
+ const handleGoogleSignIn = async () => {
+  setLoading(true);
+  try {
+    const callbackUrlParam = searchParams.get("callbackUrl") || "/products";
+    const fullCallbackUrl = `${window.location.origin}${callbackUrlParam}`;
+    await signIn("google", { callbackUrl: fullCallbackUrl });
+  } finally {
+    setLoading(false);
+  }
+};
+
 
   return (
     <div
