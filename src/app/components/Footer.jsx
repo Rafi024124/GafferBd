@@ -1,7 +1,5 @@
 "use client";
 import React, { useContext } from "react";
-import Link from "next/link";
-
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { ThemeContext } from "@/contexts/ThemeContext";
 
@@ -28,26 +26,10 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
-            <li>
-              <Link href="/" className="hover:text-blue-500 transition">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/products" className="hover:text-blue-500 transition">
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-blue-500 transition">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-blue-500 transition">
-                Contact
-              </Link>
-            </li>
+            <li>Home</li>
+            <li>Products</li>
+            <li>About Us</li>
+            <li>Contact</li>
           </ul>
         </div>
 
@@ -55,45 +37,21 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Support</h4>
           <ul className="space-y-2">
-            <li>
-              <Link href="/faq" className="hover:text-blue-500 transition">
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link href="/shipping" className="hover:text-blue-500 transition">
-                Shipping
-              </Link>
-            </li>
-            <li>
-              <Link href="/returns" className="hover:text-blue-500 transition">
-                Returns
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms" className="hover:text-blue-500 transition">
-                Terms & Conditions
-              </Link>
-            </li>
+            <li>FAQ</li>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Terms & Conditions</li>
           </ul>
         </div>
 
         {/* Social */}
         <div>
           <h4 className="font-semibold mb-4">Follow Us</h4>
-          <div className="flex space-x-4">
-            <a href="#" className="hover:text-blue-500 transition">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-blue-500 transition">
-              <FaTwitter />
-            </a>
-            <a href="#" className="hover:text-blue-500 transition">
-              <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-blue-500 transition">
-              <FaLinkedinIn />
-            </a>
+          <div className="flex space-x-4 text-gray-500">
+            <FaFacebookF />
+            <FaTwitter />
+            <FaInstagram />
+            <FaLinkedinIn />
           </div>
           <p className="text-sm mt-4">
             &copy; {new Date().getFullYear()} Gaffer Sports. All rights reserved.
