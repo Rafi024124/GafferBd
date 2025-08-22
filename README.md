@@ -1,81 +1,109 @@
 🏆 GafferBD – Demo Jersey E-Commerce Store
 
-GafferBD is a simple demo e-commerce application built for football fans to explore and showcase jerseys of different countries and clubs.
-This project focuses on browsing, viewing details, and adding jerseys through a basic authentication flow.
+GafferBD is a demo e-commerce application built with Next.js to showcase football jerseys from clubs and countries.
+The project demonstrates authentication, protected routes, and basic CRUD functionality with a clean UI.
 
-🚀 Features
-🏠 Home Page
+📖 Project Description
 
-A Highlights Section displaying top football jerseys.
+Browse jerseys on the Products page.
 
-Clean layout to showcase trending or featured jerseys.
+View details of each jersey.
 
-📦 Products Page (/products)
+Social login with NextAuth (Google or credentials).
 
-Displays a list of all available jerseys (countries & clubs).
+After login, users can add new jerseys via a protected dashboard form.
 
-Clicking on any jersey opens a Details Page with:
+This project is for learning/demo purposes only and does not include checkout or payment features.
 
-Jersey image
+⚙️ Setup & Installation
+Prerequisites
 
-Price (if included)
+Node.js (v18+ recommended)
+
+npm or yarn
+
+Installation Steps
+# 1. Clone the repository
+git clone https://github.com/your-username/gafferbd.git
+cd gafferbd
+
+# 2. Install dependencies
+npm install
+
+# 3. Create an .env file in the root and configure NextAuth
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-secret
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+
+# 4. Run the development server
+npm run dev
+
+
+The app will be available at http://localhost:3000
+.
+
+🛤️ Route Summary
+1. Landing Page (/)
+
+Contains 4 sections:
+
+Navbar (navigation to Login & Products)
+
+Hero (intro banner)
+
+Product Highlights (top jerseys preview)
+
+Footer
+
+Publicly accessible, no authentication required.
+
+2. Login Page (/login)
+
+Implemented with NextAuth.
+
+Supports Google login (or credentials login).
+
+After successful login → redirects to /products.
+
+3. Product List Page (/products)
+
+Publicly accessible.
+
+Fetches and displays products from a mock backend/file.
+
+Each product includes:
+
+Name
 
 Description
 
-Club / Country info
+Price
 
-👕 Jersey Details
+Details button
 
-Each product has a dedicated page with detailed information.
+4. Product Details Page (/products/[id])
 
-Option to explore jersey design and metadata.
+asdasdasdPublicly accessible.
 
-🔐 Authentication
+Shows full details of a single product.
 
-Social Login support (Google / GitHub).
+5. Protected Page: Add Product (/dashboard/add-product)
 
-Only authenticated users can add a new product.
+Only accessible when logged in.
 
-➕ Add Product (after login)
+Contains a form to add a new jersey (store in database or state).
 
-Authenticated users can add a jersey using a form.
-
-Fields include:
-
-Jersey Name
-
-Club / Country
-
-Image URL
-
-Description
-
-Price (optional)
+Unauthenticated users are redirected to /login.
 
 🛠️ Tech Stack
 
-Frontend: Next.js / React
+Next.js (App Router) – Frontend framework
 
-Styling: TailwindCSS
+Tailwind CSS – Styling
 
-Auth: Firebase Authentication (Social login)
+NextAuth – Authentication (Social login)
 
-Backend (optional): Node.js + Express + MongoDB (if data is stored)
+Mock backend / JSON file – Product data
 
-📸 Demo Flow
-
-Visit Home Page → See highlighted jerseys.
-
-Navigate to Products Page → Browse all jerseys.
-
-Click a Jersey Card → See detailed information.
-
-Login with Social Auth → Unlock Add Product feature.
-
-Add a new Jersey through the form.
-
-⚽ About the Project
-
-This is a demo project for learning purposes.
-The goal is to simulate an e-commerce flow without complex cart/checkout systems.
-Perfect for football enthusiasts who want a simple platform to explore jersey collections.
+MongoDB (optional) – Store added products
