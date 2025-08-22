@@ -10,7 +10,7 @@ let isConnected = false;
 
 
 export default async function dbConnect(collectionName){
-    const uri = process.env.MONGODB_URI;
+    const uri = process.env.NEXT_PUBLIC_MONGODB_URI;
     if(!uri){
         throw new Error('MONGODB_URI is missing from environment variables')
 
