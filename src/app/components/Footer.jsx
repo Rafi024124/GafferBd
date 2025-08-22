@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`w-full py-10 transition-colors mt-4 ${
+      className={`w-full py-10 transition-colors ${
         theme === "dark" ? "bg-gray-900 text-gray-300" : "bg-gray-100 text-gray-700"
       }`}
     >
@@ -29,22 +29,22 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/" className="hover:text-blue-500 transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/products" className="hover:text-blue-500 transition">
                 Products
               </Link>
             </li>
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/about" className="hover:text-blue-500 transition">
                 About Us
               </Link>
             </li>
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/contact" className="hover:text-blue-500 transition">
                 Contact
               </Link>
             </li>
@@ -56,22 +56,22 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">Support</h4>
           <ul className="space-y-2">
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/faq" className="hover:text-blue-500 transition">
                 FAQ
               </Link>
             </li>
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/shipping" className="hover:text-blue-500 transition">
                 Shipping
               </Link>
             </li>
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/returns" className="hover:text-blue-500 transition">
                 Returns
               </Link>
             </li>
             <li>
-              <Link  className="hover:text-blue-500 transition">
+              <Link href="/terms" className="hover:text-blue-500 transition">
                 Terms & Conditions
               </Link>
             </li>
@@ -82,16 +82,16 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <a  className="hover:text-blue-500 transition">
+            <a href="#" className="hover:text-blue-500 transition">
               <FaFacebookF />
             </a>
-            <a  className="hover:text-blue-500 transition">
+            <a href="#" className="hover:text-blue-500 transition">
               <FaTwitter />
             </a>
-            <a  className="hover:text-blue-500 transition">
+            <a href="#" className="hover:text-blue-500 transition">
               <FaInstagram />
             </a>
-            <a className="hover:text-blue-500 transition">
+            <a href="#" className="hover:text-blue-500 transition">
               <FaLinkedinIn />
             </a>
           </div>
