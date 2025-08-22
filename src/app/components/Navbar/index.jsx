@@ -22,7 +22,7 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/products", label: "Products" },
     // Only show Add Products if user is logged in
-    { href: "/admin/add-products", label: "Add Products" }
+    { href: "/admin/add-products", label: "Add Product" }
   ];
 
   const navItems = navLinks.map(({ href, label }) => {
