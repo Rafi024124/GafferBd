@@ -31,7 +31,7 @@ export default function LoginPage() {
 
   return (
     <div
-      className={`max-w-md mx-auto mt-20 p-6 rounded-xl shadow-lg transition-colors ${
+      className={`min-h-screen max-w-md mx-auto mt-20 p-6 rounded-xl shadow-lg transition-colors ${
         theme === "dark" ? "bg-gray-800 text-white" : "bg-white text-gray-900"
       }`}
     >

@@ -149,11 +149,7 @@ export default function Navbar() {
                 Login
               </button>
             </Link>
-            <Link href="/register">
-              <button className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white">
-                Register
-              </button>
-            </Link>
+            
           </>
         ))}
       </div>
