@@ -24,14 +24,14 @@ npm or yarn
 
 Installation Steps
 # 1. Clone the repository
-git clone https://github.com/your-username/gafferbd.git
+git clone https://github.com/your-Rafi024124/gafferbd.git
 cd gafferbd
 
 # 2. Install dependencies
 npm install
 
 # 3. Create an .env file in the root and configure NextAuth
-NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_URL=http://localhost:3000 or your deployed link
 NEXTAUTH_SECRET=your-secret
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
